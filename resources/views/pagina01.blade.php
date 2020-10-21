@@ -11,7 +11,10 @@
 @section('contenido')
 
 <p>Este es el body</p>
-<a href="{{url('/pagina02/Historia')}}" class="btn btn-xs btn-info pull-right">HISTORIA</a>
-<a href="{{url('/pagina02/Economia')}}" class="btn btn-xs btn-info pull-right">ECONOMIA</a>
-<a href="{{url('/pagina02/Ingles')}}" class="btn btn-xs btn-info pull-right">INGLES</a>
+
+<a href="{{url('pregunta', ['Historia'])}}" class="btn btn-xs btn-info pull-right">HISTORIA</a>
+<a href="{{url('pregunta', ['Economia'])}}" class="btn btn-xs btn-info pull-right">ECONOMIA</a>
+<a href="{{url('pregunta', ['Ingles'])}}" class="btn btn-xs btn-info pull-right">INGLES</a>
+<a href="{{url('api/pregunta', ['Historia'])}}" class="btn btn-xs btn-info pull-right">HISTORIA PERO UN JSON SOLO</a>
+
 @endsection
