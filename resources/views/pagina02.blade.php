@@ -10,6 +10,6 @@
 
 @section('contenido')
 
-<h1>Este es el body de la pagina 02</h1>
-<a href="{{url('/pagina01')}}" class="btn btn-xs btn-info pull-right">pagina 01</a>
+<h1>El tema elegido es: {{$tema }}</h1>
+<a href="{{url('/')}}" class="btn btn-xs btn-info pull-right">pagina 01</a>
 @endsection
